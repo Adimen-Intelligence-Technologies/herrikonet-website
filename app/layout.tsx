@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Preloader } from "./components/Preloader";
+
 
 export const metadata: Metadata = {
   title: "Herrikonekt",
@@ -15,10 +15,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es">
-      <body>
-        <Preloader />
-        {children}
+    <html lang="es" suppressHydrationWarning>
+      <body suppressHydrationWarning>
+       
+          {children}
+   
       </body>
     </html>
   );
