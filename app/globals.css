@@ -41,8 +41,8 @@
   --green-700: #1d4a1c;
   --green-500: #62b94e;
   --green-300: #a0f981;
-  --paper: #f2f2ee;
-  --ink: #133212;
+  --paper: #133212;
+  --ink: #f2f2ee;
 }
 
 @theme inline {
@@ -61,7 +61,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background: var(--paper);
+  background: #62b94e;
   color: var(--ink);
   font-family: var(--font-sans);
   font-weight: 400;
