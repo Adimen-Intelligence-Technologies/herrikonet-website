@@ -1,5 +1,6 @@
+import Image from "next/image";
 import LiquidEther from "./LiquidEther";
-import Logo from "./Logo";
+import NavLink from "./NavLink";
 
 export default function Header() {
   return (
@@ -33,21 +34,27 @@ export default function Header() {
         <a
           href="/"
           style={{
-            fontFamily: "var(--font-display)",
-            fontSize: "clamp(20px, 1.8vw, 24px)",
-            letterSpacing: "-0.01em",
-            color: "inherit",
+            display: "block",
+            width: "clamp(120px, 12vw, 180px)",
             textDecoration: "none",
+            color: "inherit",
           }}
         >
-          herrikonekt
+          <Image
+            src="/logo-herrikonekt.svg"
+            alt="herrikonekt"
+            width={377}
+            height={74}
+            style={{ width: "100%", height: "auto", display: "block" }}
+            priority
+          />
         </a>
 
-        <ul className="header-nav-links">
-          <li><a href="#discover">Discover</a></li>
-          <li><a href="#values">Values</a></li>
-          <li><a href="#community">Community</a></li>
-          <li><a href="#about">About</a></li>
+        <ul className="header-nav-links text-2xl">
+          <li><NavLink href="#para-quien">¿Para quién?</NavLink></li>
+          <li><NavLink href="#como-funciona">¿Cómo funciona?</NavLink></li>
+          <li><NavLink href="#eres-herri">¿Eres Herri?</NavLink></li>
+          <li><NavLink href="#esponsoriza">Esponsoriza la causa</NavLink></li>
         </ul>
 
         <button
@@ -69,7 +76,7 @@ export default function Header() {
 
       <div className="header-hero" style={{ position: "relative", zIndex: 1 }}>
         <div>
-          <h1>Revolución en tu bolsillo</h1>
+          <h1>La revolución del comercio local, en tu bolsillo</h1>
           <p>
            Una aplicación que impulsa la digitalización y el consumo local, conectando a las personas con los comercios de su entorno y fortaleciendo la economía de la comunidad.
           </p>
@@ -108,7 +115,23 @@ export default function Header() {
         </div>
 
         <div className="header-visual">
-          <Logo />
+          <div className="header-phones">
+            <Image
+              src="/images/phone-3.png"
+              alt=""
+              width={697}
+              height={821}
+              className="header-phone header-phone-back"
+            />
+            <Image
+              src="/images/phone-1.png"
+              alt="herrikonekt app"
+              width={697}
+              height={821}
+              className="header-phone header-phone-front"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>
