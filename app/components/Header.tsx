@@ -36,7 +36,7 @@ export default function Header() {
           href="/"
           style={{
             display: "block",
-            width: "clamp(120px, 12vw, 180px)",
+            width: "clamp(180px, 14vw, 220px)",
             textDecoration: "none",
             color: "inherit",
           }}
