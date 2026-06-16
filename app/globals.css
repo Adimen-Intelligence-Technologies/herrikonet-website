@@ -275,6 +275,10 @@ a {
   .header-nav {
     padding: 16px 20px;
     gap: 12px;
+    justify-content: center;
+  }
+  .header-nav > a {
+    width: clamp(150px, 38vw, 200px);
   }
   .header-hero {
     padding: 16px 20px 48px;
