@@ -66,6 +66,7 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background: #f8f0e5;
+  cursor: url("/images/trebol.svg") 2 2, auto;
 }
 
 h1, h2, h3 {

@@ -23,10 +23,10 @@ export default function Header() {
         colors={["#62b94e", "#a0f981", "#ACFE6B"]}
         autoDemo={true}
         autoSpeed={0.1}
-        autoIntensity={1.4}
-        mouseForce={5}
+        autoIntensity={3}
+        mouseForce={8}
         cursorSize={100}
-        viscous={30}
+        viscous={80}
         iterationsPoisson={51}
         resolution={0.4}
       />
