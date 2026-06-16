@@ -281,11 +281,12 @@ a {
     gap: 24px;
   }
   .header-hero h1 {
-    font-size: clamp(32px, 9vw, 44px);
+    font-size: clamp(36px, 10.5vw, 52px);
     line-height: 1;
   }
   .header-hero p {
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 1.5;
     max-width: 100%;
   }
   .header-visual {
