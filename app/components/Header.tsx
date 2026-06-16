@@ -80,9 +80,9 @@ export default function Header() {
       <div className="header-hero" style={{ position: "relative", zIndex: 1 }}>
         <div>
           <span className="header-eyebrow">Coming soon</span>
-          <h1>Tokiko merkataritzaren iraultza, zure poltsikoan</h1>
+          <h1>Herriko merkataritzaren iraultza, zure poltsikoan</h1>
           <p>
-           Digitalizazioa eta tokiko kontsumoa bultzatzen dituen aplikazio bat, pertsonak inguruko saltokiekin konektatuz eta komunitatearen ekonomia indartuz.
+           Digitalizazioa eta herriko kontsumoa bultzatzen dituen aplikazio bat, pertsonak inguruko saltokiekin konektatuz eta komunitatearen ekonomia indartuz.
           </p>
           <div className="header-ctas">
             <img
