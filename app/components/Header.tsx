@@ -5,6 +5,7 @@ import NavLink from "./NavLink";
 export default function Header() {
   return (
     <section
+      className="header-section"
       style={{
         position: "relative",
         margin: "12px",
@@ -50,6 +51,7 @@ export default function Header() {
           />
         </a>
 
+        {/*
         <ul className="header-nav-links text-2xl">
           <li><NavLink href="#para-quien">¿Para quién?</NavLink></li>
           <li><NavLink href="#como-funciona">¿Cómo funciona?</NavLink></li>
@@ -70,47 +72,29 @@ export default function Header() {
             cursor: "pointer",
           }}
         >
-          Get in touch
+          Harremetan jarri
         </button>
+        */}
       </nav>
 
       <div className="header-hero" style={{ position: "relative", zIndex: 1 }}>
         <div>
-          <h1>La revolución del comercio local, en tu bolsillo</h1>
+          <span className="header-eyebrow">Coming soon</span>
+          <h1>Tokiko merkataritzaren iraultza, zure poltsikoan</h1>
           <p>
-           Una aplicación que impulsa la digitalización y el consumo local, conectando a las personas con los comercios de su entorno y fortaleciendo la economía de la comunidad.
+           Digitalizazioa eta tokiko kontsumoa bultzatzen dituen aplikazio bat, pertsonak inguruko saltokiekin konektatuz eta komunitatearen ekonomia indartuz.
           </p>
           <div className="header-ctas">
-            <button
-              style={{
-                background: "#ffffff",
-                color: "#0a1d09",
-                border: "none",
-                borderRadius: "999px",
-                padding: "16px 30px",
-                fontFamily: "var(--font-sans)",
-                fontSize: "15px",
-                fontWeight: 500,
-                cursor: "pointer",
-              }}
-            >
-              Get started
-            </button>
-            <button
-              style={{
-                background: "transparent",
-            color: "#ffffff",
-            border: "1px solid #ffffff",
-                borderRadius: "999px",
-                padding: "16px 30px",
-                fontFamily: "var(--font-sans)",
-                fontSize: "15px",
-                fontWeight: 500,
-                cursor: "pointer",
-              }}
-            >
-              Learn more
-            </button>
+            <img
+              src="/app-store-download.svg"
+              alt="App Store-etik deskargatu"
+              style={{ height: "52px", width: "auto", display: "block" }}
+            />
+            <img
+              src="/google-play download.svg"
+              alt="Google Play-tik deskargatu"
+              style={{ height: "52px", width: "auto", display: "block" }}
+            />
           </div>
         </div>
 

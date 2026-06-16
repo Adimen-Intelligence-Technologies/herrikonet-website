@@ -42,16 +42,7 @@ export default function Isologo() {
   }, []);
 
   return (
-    <section
-      ref={ref}
-      style={{
-        minHeight: '100dvh',
-        display: 'grid',
-        placeItems: 'center',
-        padding: '48px 24px',
-        background: 'var(--paper)',
-      }}
-    >
+    <div ref={ref} style={{ display: 'block', width: '100%' }}>
       <svg
         ref={svgRef}
         width="108"
@@ -59,7 +50,7 @@ export default function Isologo() {
         viewBox="0 0 108 113"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ width: 'min(40vw, 320px)', height: 'auto', display: 'block', background: 'transparent' }}
+        style={{ width: '100%', maxWidth: 200, height: 'auto', display: 'block', background: 'transparent' }}
       >
         <g transform="matrix(1,0,0,1,-1434.324421,-2292.980337)">
           <g transform="matrix(1,0,0,1,0,2045.788454)">
@@ -96,6 +87,6 @@ export default function Isologo() {
           </g>
         </g>
       </svg>
-    </section>
+    </div>
   );
 }
